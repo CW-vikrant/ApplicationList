@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/action_retrofit"
+        android:orderInCategory="2"
+        android:icon="@mipmap/ic_launcher"
+        app:showAsAction="always"
+        android:title="hello" />
+
+    <item
+        android:id="@+id/action_service"
+        android:orderInCategory="1"
+        app:showAsAction="always"
+        android:tint="#A74236"
+        android:title="Service" />
+
+    <item
+        android:id="@+id/action_save"
+        android:orderInCategory="0"
+        app:showAsAction="always"
+        android:tint="#A74236"
+        android:title="SavFILE EXT" />
+</menu>

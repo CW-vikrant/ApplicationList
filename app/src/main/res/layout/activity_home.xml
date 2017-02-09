@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical"
+    android:padding="4dp">
+
+    <EditText
+        android:id="@+id/tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <ListView
+        android:id="@+id/lv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/tv"
+        android:layout_above="@+id/button" />
+
+
+    <LinearLayout
+        android:padding="8dp"
+        android:id="@+id/lladd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+
+        <EditText
+            android:layout_weight="1"
+            android:id="@+id/name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:hint="name" />
+
+        <EditText
+            android:layout_weight="1"
+            android:hint="number"
+            android:id="@+id/number"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"/>
+        <EditText
+            android:layout_weight="1"
+            android:id="@+id/note"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:hint="note" />
+
+        <Button
+            android:layout_weight="1"
+            android:id="@+id/add"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="ADD" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_above="@id/lladd"
+        android:padding="8dp"
+        android:id="@+id/llupdate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/name_old"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:hint="old name" />
+
+        <EditText
+            android:layout_weight="1"
+            android:hint="new name"
+            android:id="@+id/name_new"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"/>
+
+        <Button
+            android:layout_weight="1"
+            android:id="@+id/update"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="UPDATE" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/llupdate"
+        android:padding="10dp"
+        android:text="See Favorites" />
+
+    <Button
+        android:id="@+id/open_file"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/llupdate"
+        android:layout_toRightOf="@id/button"
+        android:padding="10dp"
+        android:text="View File DATA" />
+    <Button
+        android:id="@+id/save_file_dir"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/llupdate"
+        android:layout_toRightOf="@id/open_file"
+        android:padding="10dp"
+        android:text="SAVE FILE CACHE" />
+
+
+</RelativeLayout>
